@@ -5,13 +5,17 @@ Unicode-aware multilingual text diff library for Node.js. Diffs by whole words a
 ## Install
 
 ```bash
-pnpm add textdiff
+npm install @pawanosman/textdiff
+```
+or using pnpm
+```bash
+pnpm add @pawanosman/textdiff
 ```
 
 ## Usage
 
 ```ts
-import { getTextDiffs } from "textdiff";
+import { getTextDiffs } from "@pawanosman/textdiff";
 
 const oldText = "The quick brown fox jumps over the lazy dog";
 const newText = "The fast dark wolf leaps over the lazy dog";
