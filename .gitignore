@@ -1,0 +1,38 @@
+# Node.js
+node_modules/
+pnpm-lock.yaml
+.pnpm-store/
+
+# Build output
+dist/
+.tsbuildinfo
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Tests/coverage
+coverage/
+.nyc_output/
+
+# Editors/OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Caches
+.cache/
+.parcel-cache/
+.eslintcache
+
+# Env files
+.env
+.env.*
+!.env.example
+
+

@@ -1,0 +1,44 @@
+{
+	"name": "textdiff",
+	"version": "0.1.0",
+	"description": "Unicode-aware multilingual text diff library for Node.js that diffs by whole words and merges adjacent changes.",
+	"type": "module",
+	"main": "dist/index.cjs",
+	"module": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"exports": {
+		".": {
+			"import": "./dist/index.js",
+			"require": "./dist/index.cjs"
+		}
+	},
+	"files": [
+		"dist"
+	],
+	"sideEffects": false,
+	"scripts": {
+		"build": "tsup src/index.ts --format esm,cjs --dts",
+		"clean": "rimraf dist",
+		"prepare": "pnpm run build",
+		"test": "node --version",
+		"example": "pnpm run build && node examples/basic.mjs"
+	},
+	"keywords": [
+		"diff",
+		"text",
+		"unicode",
+		"multilingual",
+		"word-diff",
+		"intl",
+		"segmenter"
+	],
+	"author": "",
+	"license": "MIT",
+	"packageManager": "pnpm@10.13.1",
+	"devDependencies": {
+		"@types/node": "^22.5.5",
+		"rimraf": "^6.0.1",
+		"tsup": "^8.2.4",
+		"typescript": "^5.5.4"
+	}
+}
